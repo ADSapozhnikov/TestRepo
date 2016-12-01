@@ -25,6 +25,9 @@ test:
     - uname
 
 ## Customize deployment commands
-#deployment:
-#  staging:
-#    branch: development
+deployment:
+  staging:
+    branch: development
+    commands:
+      - ssh root@web.goldenbar.com.ua
+
