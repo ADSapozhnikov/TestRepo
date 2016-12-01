@@ -30,4 +30,5 @@ deployment:
     branch: development
     commands:
       - ssh root@web.goldenbar.com.ua
+      - exit
 
