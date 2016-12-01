@@ -19,6 +19,11 @@ checkout:
     - git submodule sync
     - git submodule update --init # use submodules
 
+## Customize test commands
+test:
+  post:
+    - bundle exec rake custom:test:suite
+
 ## Customize deployment commands
 #deployment:
 #  staging:
