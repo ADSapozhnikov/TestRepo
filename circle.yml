@@ -22,7 +22,7 @@ checkout:
 ## Customize test commands
 test:
   post:
-    - bundle exec rake custom:test:suite
+    - uname
 
 ## Customize deployment commands
 #deployment:
