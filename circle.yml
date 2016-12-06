@@ -29,6 +29,7 @@ deployment:
   staging:
     branch: development
     commands:
-      - ssh root@web.goldenbar.com.ua
-      - exit
+      - aws s3 sync / s3://auto-deploy-circleci --delete
+
+
 
