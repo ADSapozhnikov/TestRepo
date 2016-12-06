@@ -29,9 +29,8 @@ deployment:
   staging:
     branch: development
     commands:
-      - cd /var/www/
       - git clone -b development git@github.com:ADSapozhnikov/TestRepo.git
-      - aws s3 sync /var/www/TestRepo s3://auto-deploy-circleci/TestRepo --delete
+      - aws s3 sync /TestRepo s3://auto-deploy-circleci/TestRepo --delete
 
 
 
