@@ -29,6 +29,7 @@ deployment:
   staging:
     branch: development
     commands:
+      - rm -rf /home/ubuntu/TestRepo/.git
       - aws s3 sync /home/ubuntu/TestRepo/ s3://auto-deploy-circleci/TestRepo --delete
 
 
