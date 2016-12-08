@@ -14,10 +14,10 @@ machine:
 #    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
 
 ## Customize checkout
-#checkout:
-#  post:
-#    - git submodule sync
-#    - git submodule update --init # use submodules
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
 
 ## Customize test commands
 test:
@@ -30,6 +30,7 @@ deployment:
     branch: development
     commands:
       - rm -rf /home/ubuntu/TestRepo/.git
+      - rm circle.yml
       - aws s3 sync /home/ubuntu/TestRepo/ s3://auto-deploy-circleci/TestRepo --delete
 
 
