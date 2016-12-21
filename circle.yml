@@ -2,6 +2,8 @@
 machine:
   timezone:
     Europe/Kiev # Set the timezone
+  java:
+    version: openjdk8
 
 #  # Override /etc/hosts
 #  hosts:
