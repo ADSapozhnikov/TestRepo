@@ -5,6 +5,11 @@ machine:
   java:
     version: openjdk8
 
+dependencies:
+  override:
+    - mvn dependency:resolve
+
+
 #  # Override /etc/hosts
 #  hosts:
 #    circlehost: 127.0.0.1
@@ -24,7 +29,7 @@ checkout:
 ## Customize test commands
 test:
   post:
-    - uname
+    - mvn integration-test ./1800control/
 
 ## Customize deployment commands
 deployment:
