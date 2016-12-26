@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AfunnelTest" duration-ms="15767" started-at="2016-12-26T12:01:07Z" finished-at="2016-12-26T12:01:23Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="15767" started-at="2016-12-26T12:01:07Z" finished-at="2016-12-26T12:01:23Z">
+      <class name="AfunnelTest">
+        <test-method status="PASS" signature="testPageTitleInChrome()[pri:0, instance:AfunnelTest@71be98f5]" name="testPageTitleInChrome" duration-ms="15752" started-at="2016-12-26T14:01:07Z" finished-at="2016-12-26T14:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitleInChrome -->
+      </class> <!-- AfunnelTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- AfunnelTest -->
+</testng-results>
