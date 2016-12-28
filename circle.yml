@@ -5,21 +5,6 @@ machine:
   java:
     version: openjdk8
 
-#dependencies:
-#  override:
-#    - mvn dependency:resolve
-
-
-#  # Override /etc/hosts
-#  hosts:
-#    circlehost: 127.0.0.1
-#    dev.mycompany.com: 127.0.0.1
-#
-#  # Add some environment variables
-#  environment:
-#    CIRCLE_ENV: test
-#    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
-
 ## Customize checkout
 checkout:
   post:
@@ -29,7 +14,7 @@ checkout:
 ## Customize test commands
 test:
   post:
-    - uname -a
+    - uname
 
 ## Customize deployment commands
 deployment:
