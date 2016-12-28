@@ -24,15 +24,15 @@ deployment:
       - rm -rf /home/ubuntu/TestRepo/.git
       - rm circle.yml
       - aws s3 sync /home/ubuntu/TestRepo/ s3://auto-deploy-circleci/TestRepo --delete
-notify:
-  webhooks:
-    # A list of hook hashes, containing the URL field
-    - url: https://hooks.slack.com/services/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
-    {
-      "payload": {
-        "deployment" : "Deploy to S3 is Done"
-      }
-    }
+#notify:
+#  webhooks:
+#    # A list of hook hashes, containing the URL field
+#    - url: https://hooks.slack.com/services/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
+#    {
+#      "payload": {
+#        "deployment" : "Deploy to S3 is Done"
+#      }
+#    }
 
 
 
