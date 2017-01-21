@@ -2,8 +2,8 @@
 machine:
   timezone:
     Europe/Kiev # Set the timezone
-  java:
-    version: openjdk8
+#  java:
+#    version: openjdk8
 
 ## Customize checkout
 checkout:
